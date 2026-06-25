@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Wedding Invitation</title>
+    <meta name="description" content="You are warmly invited to celebrate our wedding." />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Wedding Invitation" />
+    <meta property="og:description" content="You are warmly invited to celebrate our wedding." />
+    <meta property="og:image" content="assets/photos/preview.jpg" />
+    <meta property="og:url" content="" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="ambient" aria-hidden="true"></div>
+
+    <div class="cover" id="cover">
+      <div class="cover__photo" id="coverPhoto"></div>
+      <div class="cover__shade"></div>
+      <div class="cover__content">
+        <p class="eyebrow">The Wedding Of</p>
+        <h1 id="coverNames">[Bride Namel] &amp; [Groom Name]</h1>
+        <p class="cover__date" id="coverDate">[Wedding Date]</p>
+        <button class="open-button shine" id="openInvitation" type="button">
+          <span>Open Invitation</span>
+        </button>
+      </div>
+      <div class="cover__hint">Tap to begin</div>
+    </div>
+
+    <main class="site" id="site">
+      <section class="hero reveal">
+        <div class="hero__media" id="heroPhoto"></div>
+        <div class="hero__content">
+          <p class="eyebrow">Together With Their Families</p>
+          <h2 id="coupleNames">[Bride Namel] &amp; [Groom Name]</h2>
+          <p class="hero__line" id="weddingLine">invite you to share in a day of love, blessing, and celebration.</p>
+          <div class="event-card">
+            <span id="eventDate">[Wedding Date]</span>
+            <span id="eventTime">[Wedding Time]</span>
+          </div>
+        </div>
+        <div class="scroll-indicator" aria-hidden="true">
+          <span></span>
+        </div>
+      </section>
+
+      <section class="message reveal">
+        <p class="section-label">With Joyful Hearts</p>
+        <h2>An Invitation Written In Love</h2>
+        <p id="invitationMessage">
+          Every love story becomes more beautiful when it is shared with the people who made the journey meaningful.
+          Your presence will make our wedding day warmer, brighter, and unforgettable.
+        </p>
+      </section>
+
+      <section class="scratch-section reveal" id="dateReveal">
+        <p class="section-label">A Special Date</p>
+        <h2>Scratch To Reveal</h2>
+        <div class="scratch-card">
+          <div class="scratch-card__secret">
+            <span id="revealedDate">[Wedding Date]</span>
+            <small id="revealedTime">[Wedding Time]</small>
+          </div>
+          <canvas id="scratchCanvas" aria-label="Scratch area to reveal wedding date"></canvas>
+        </div>
+        <p class="scratch-help">Swipe gently across the gold veil.</p>
+        <div class="petal-layer" id="petalLayer" aria-hidden="true"></div>
+      </section>
+
+      <section class="countdown reveal">
+        <p class="section-label">Counting The Moments</p>
+        <h2>Until We Say Yes</h2>
+        <div class="timer" id="countdownTimer">
+          <div><strong data-unit="days">00</strong><span>Days</span></div>
+          <div><strong data-unit="hours">00</strong><span>Hours</span></div>
+          <div><strong data-unit="minutes">00</strong><span>Minutes</span></div>
+          <div><strong data-unit="seconds">00</strong><span>Seconds</span></div>
+        </div>
+      </section>
+
+      <section class="portrait reveal">
+        <div class="portrait__image" id="portraitOne"></div>
+        <div class="portrait__text">
+          <p class="section-label">A Quiet Promise</p>
+          <h2>Two Hearts, One Beginning</h2>
+          <p>May this celebration be filled with tenderness, prayer, laughter, and the people we love most.</p>
+        </div>
+      </section>
+
+      <section class="gallery reveal">
+        <p class="section-label">Our Memories</p>
+        <h2>Gallery</h2>
+        <div class="gallery__grid" id="galleryGrid"></div>
+      </section>
+
+      <section class="venue reveal">
+        <p class="section-label">Wedding Venue</p>
+        <h2 id="venueName">[Venue Name]</h2>
+        <p id="venueText">We would be honored to celebrate with you at [Venue Name].</p>
+        <a class="map-button shine" id="mapButton" href="#" target="_blank" rel="noopener">
+          Open Map
+        </a>
+      </section>
+    </main>
+
+    <button class="music-toggle" id="musicToggle" type="button" aria-label="Toggle music">♪</button>
+    <audio id="backgroundMusic" loop preload="none"></audio>
+
+    <script src="config.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
