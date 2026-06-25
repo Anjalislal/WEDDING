@@ -11,16 +11,16 @@ window.WEDDING_CONFIG = {
   shareTitle: "Wedding Invitation",
   shareDescription: "You are warmly invited to celebrate our wedding.",
   assets: {
-    coverPhoto: "assets/photos/wedding.jpg",
-    heroPhoto: "assets/photos/wedding2.jpg",
-    portraitPhoto: "assets/photos/wedding.jpg",
+    coverPhoto: "assets/photos/wedding3.jpeg",
+    heroPhoto: "assets/photos/wedding4.jpeg",
+    portraitPhoto: "assets/photos/wedding3.jpeg",
     gallery: [
-      "assets/photos/wedding.jpg",
-      "assets/photos/wedding.jpg",
-      "assets/photos/wedding.jpg",
-      "assets/photos/wedding.jpg",
-      "assets/photos/wedding.jpg",
-      "assets/photos/wedding.jpg"
+      "assets/photos/wedding3.jpeg",
+      "assets/photos/wedding4.jpeg",
+      "assets/photos/wedding5.jpeg",
+      "assets/photos/wedding3.jpeg",
+      "assets/photos/wedding4.jpeg",
+      "assets/photos/wedding5.jpeg"
     ],
     music: "assets/music/background.mp3",
     shareImage: "assets/photos/preview.jpg"
